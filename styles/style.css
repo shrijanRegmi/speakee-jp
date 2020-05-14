@@ -1,0 +1,343 @@
+html {
+  width: 100vw;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Nunito", sans-serif;
+}
+
+button:focus {
+  outline: none;
+}
+
+.blueBg {
+  min-height: 100vh;
+  margin-bottom: 50px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#e5f3f7), to(#f5fafc));
+  background: linear-gradient(to bottom right, #e5f3f7, #f5fafc);
+}
+
+#header {
+  padding: 20px 40px;
+}
+
+#header h5 {
+  margin: 0px;
+}
+
+#header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+#header .nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#header .brandContainer li:nth-child(2) {
+  margin: 0px 20px;
+}
+
+#header .brandContainer h1 {
+  font-weight: 900 !important;
+  background: linear-gradient(349.8deg, #ff7676 0%, #f54ea2 100%), #95a5b8;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 20px;
+}
+
+#header .tabContainer a {
+  font-weight: bolder;
+  color: #000;
+  margin: 0px 20px;
+}
+
+#header .tabContainer a span {
+  font-weight: normal;
+}
+
+#header .btnContainer button {
+  margin-left: 20px;
+  padding: 10px 25px;
+  width: 150px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+#header .btnContainer button img {
+  width: 20px;
+  height: auto;
+}
+
+#header .menu {
+  display: none;
+  cursor: pointer;
+  background: linear-gradient(349.8deg, #ff7676 0%, #f54ea2 100%), #95a5b8;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#landingSection {
+  min-height: 80vh;
+  position: relative;
+}
+
+#landingSection .container {
+  max-width: 1400px !important;
+  height: 100%;
+}
+
+#landingSection .row {
+  height: 100%;
+  padding-bottom: 50px;
+}
+
+#landingSection p {
+  font-size: 20px;
+}
+
+#landingSection .btns button {
+  margin-right: 20px;
+  margin-top: 20px;
+  padding: 10px 25px;
+  width: 150px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+#landingSection .btns button img {
+  width: 20px;
+  height: auto;
+}
+
+#landingSection .content p {
+  width: 60%;
+}
+
+#landingSection .floatingBtn {
+  position: absolute;
+  left: 50%;
+  bottom: 100px;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  font-size: 32px;
+  padding: 30px 50px;
+  border-radius: 500px 0px 500px 500px;
+  border: none;
+  background: linear-gradient(342.8deg, #ff7676 0%, #f54ea2 100%);
+  color: #fff;
+  z-index: 4;
+}
+
+#landingSection .mainImg {
+  height: auto;
+  width: 80%;
+}
+
+#fiveColSection {
+  margin-bottom: 200px;
+}
+
+#fiveColSection .mCol {
+  width: 18%;
+  margin: 0px 10px;
+}
+
+#showcaseSection {
+  min-height: 100vh;
+}
+
+#showcaseSection .row {
+  height: 100%;
+  margin-bottom: 100px;
+}
+
+#showcaseSection p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#largeTextSection {
+  background: linear-gradient(342.8deg, #ff7676 0%, #f54ea2 100%);
+  margin-top: 100px;
+  min-height: 100vh;
+}
+
+#largeTextSection h1 {
+  font-weight: 500;
+  font-size: 65px !important;
+  line-height: 90px;
+}
+
+#largeTextSection p {
+  font-size: 30px;
+}
+
+#footer {
+  min-height: 70vh;
+  background-color: #000;
+  padding: 50px;
+  padding-bottom: 20px;
+}
+
+#footer p,
+#footer a {
+  font-size: 20px;
+}
+
+#footer .brands img {
+  width: 45px;
+  height: auto;
+}
+
+#footer .brands img:nth-child(3) {
+  width: 60px;
+}
+
+#footer .sizedBox {
+  width: 20px;
+}
+
+#footer button {
+  margin-right: 20px;
+  margin-top: 20px;
+  padding: 10px 25px;
+  width: 150px;
+  background-color: #fff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+#footer button img {
+  width: 20px;
+  height: auto;
+}
+
+@media screen and (max-width: 1350px) {
+  #header .btnContainer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  #header .brandContainer {
+    width: 90vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #header .tabContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: none;
+  }
+  #header .tabContainer li {
+    margin: 10px 0px;
+  }
+  #header .menu {
+    display: block;
+  }
+  #header .nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  #landingSection h1 {
+    font-size: 52px;
+  }
+  #landingSection .mainImg {
+    margin-top: 20px;
+  }
+  #landingSection .floatingBtn {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #header {
+    padding: 20px !important;
+  }
+  #landingSection .floatingBtn {
+    font-size: 16px;
+  }
+  #landingSection .content p {
+    width: 100%;
+  }
+  #footer a {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #fiveColSection .mCol {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #fiveColSection .mCol {
+    width: 100%;
+  }
+  #showcaseSection h1 {
+    font-size: 42px !important;
+  }
+  #largeTextSection h1 {
+    font-size: 30px !important;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #footer ul {
+    margin-top: 20px;
+    width: 100%;
+  }
+  #footer ul li {
+    width: 30%;
+    margin: 10px 0px;
+  }
+  #footer ul li:nth-child(1) {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  #header .tabContainer {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #landingSection .mainImg {
+    margin-top: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
