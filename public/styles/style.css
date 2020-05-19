@@ -7,6 +7,10 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
 button:focus {
   outline: none;
 }
@@ -79,7 +83,7 @@ button:focus {
 }
 
 #header .btnContainer button img {
-  width: 20px;
+  width: 23px;
   height: auto;
 }
 
@@ -260,7 +264,7 @@ button:focus {
 }
 
 #footer button img {
-  width: 20px;
+  width: 25px;
   height: auto;
 }
 
