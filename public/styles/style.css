@@ -18,8 +18,8 @@ button:focus {
 .blueBg {
   min-height: 100vh;
   margin-bottom: 50px;
-  background: -webkit-gradient(linear, left top, right bottom, from(#e5f3f7), to(#f5fafc));
-  background: linear-gradient(to bottom right, #e5f3f7, #f5fafc);
+  background: -webkit-gradient(linear, left top, left bottom, from(#e5f3f7), to(white));
+  background: linear-gradient(to bottom, #e5f3f7, white);
 }
 
 #header {
@@ -253,7 +253,6 @@ button:focus {
 }
 
 #footer button {
-  margin-right: 20px;
   margin-top: 20px;
   padding: 10px 25px;
   width: 150px;
@@ -268,9 +267,14 @@ button:focus {
   height: auto;
 }
 
+#footer button:nth-child(1) {
+  margin-right: 20px;
+}
+
 @media screen and (max-width: 540px) {
   #header {
     padding: 20px !important;
+    margin-bottom: 20px;
   }
   #landingSection .floatingBtn {
     font-size: 16px;

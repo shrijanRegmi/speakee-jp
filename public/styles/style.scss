@@ -18,9 +18,9 @@ button:focus {
   min-height: 100vh;
   margin-bottom: 50px;
   background: linear-gradient(
-    to bottom right,
+    to bottom,
     rgb(229, 243, 247),
-    rgb(245, 250, 252)
+    rgb(255, 255, 255)
   );
 }
 
@@ -255,7 +255,6 @@ button:focus {
   }
 
   button {
-    margin-right: 20px;
     margin-top: 20px;
     padding: 10px 25px;
     width: 150px;
@@ -268,6 +267,10 @@ button:focus {
       height: auto;
     }
   }
+
+  button:nth-child(1) {
+    margin-right: 20px;
+  }
 }
 // Ending of footer
 
@@ -275,6 +278,7 @@ button:focus {
 @media screen and (max-width: 540px) {
   #header {
     padding: 20px !important;
+    margin-bottom: 20px;
   }
   #landingSection {
     .floatingBtn {
