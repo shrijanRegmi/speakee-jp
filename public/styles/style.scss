@@ -6,17 +6,22 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
 button:focus {
   outline: none;
 }
 
 .blueBg {
-  min-height: 100vh;
+  height: 110vh;
+  overflow: hidden;
   margin-bottom: 50px;
   background: linear-gradient(
-    to bottom right,
+    to bottom,
     rgb(229, 243, 247),
-    rgb(245, 250, 252)
+    rgb(255, 255, 255)
   );
 }
 
@@ -31,7 +36,6 @@ button:focus {
   ul {
     display: flex;
     align-items: center;
-
     list-style-type: none;
     padding: 0px;
     margin: 0px;
@@ -77,7 +81,7 @@ button:focus {
       border: none;
       border-radius: 5px;
       img {
-        width: 20px;
+        width: 23px;
         height: auto;
       }
     }
@@ -96,7 +100,6 @@ button:focus {
 // Starting of landing section
 #landingSection {
   min-height: 80vh;
-
   .container {
     max-width: 1400px !important;
     height: 100%;
@@ -104,7 +107,7 @@ button:focus {
 
   .row {
     height: 100%;
-
+    padding: 0px 50px;
     .col-md-6:nth-child(1) {
       margin-bottom: 120px;
     }
@@ -131,6 +134,10 @@ button:focus {
     }
   }
 
+  .contentContainer {
+    margin-bottom: 60%;
+  }
+
   .content {
     p {
       width: 60%;
@@ -150,11 +157,6 @@ button:focus {
     color: #fff;
     z-index: 4;
   }
-
-  .mainImg {
-    height: auto;
-    width: 90%;
-  }
 }
 // Ending of landing section
 
@@ -173,7 +175,7 @@ button:focus {
   display: none;
   margin-bottom: 50px;
   ol {
-    top: 380px;
+    top: 420px;
     li {
       background-color: rgb(223, 222, 222);
       height: 20px;
@@ -195,6 +197,7 @@ button:focus {
 // Starting of showcase section
 #showcaseSection {
   min-height: 100vh;
+  margin-top: 100px;
   .row {
     height: 100%;
     margin-bottom: 100px;
@@ -211,6 +214,7 @@ button:focus {
   background: linear-gradient(342.8deg, #ff7676 0%, #f54ea2 100%);
   margin-top: 100px;
   padding: 40px 20px;
+  padding-top: 70px;
   h1 {
     font-weight: 500;
     font-size: 65px !important;
@@ -244,14 +248,17 @@ button:focus {
     img:nth-child(3) {
       width: 45px;
     }
+
+    img:nth-child(5) {
+      width: 30px;
+    }
   }
 
   .sizedBox {
-    width: 20px;
+    width: 30px;
   }
 
   button {
-    margin-right: 20px;
     margin-top: 20px;
     padding: 10px 25px;
     width: 150px;
@@ -260,13 +267,16 @@ button:focus {
     border: none;
     border-radius: 5px;
     img {
-      width: 20px;
+      width: 25px;
       height: auto;
     }
   }
+
+  button:nth-child(1) {
+    margin-right: 20px;
+  }
 }
 // Ending of footer
-
 
 // different screen size fixes
 @media screen and (max-width: 540px) {
@@ -333,7 +343,7 @@ button:focus {
       font-size: 30px !important;
       line-height: 50px;
     }
-    p{
+    p {
       font-size: 18px;
     }
   }
@@ -369,6 +379,18 @@ button:focus {
   }
 }
 
+@media screen and(max-width: 992px) {
+  #header{
+    margin-bottom: 20px;
+  }
+  #landingSection {
+    position: relative;
+    .mainImg {
+      margin-top: 20px;
+    }
+  }
+}
+
 @media screen and (max-width: 1100px) {
   #sliderSection {
     display: block;
@@ -392,6 +414,28 @@ button:focus {
         text-align: center;
       }
     }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #landingSection {
+    .row {
+      padding: 0px;
+    }
+
+    .contentContainer {
+      margin-bottom: 0px;
+    }
+
+    .mainImg {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .blueBg {
+    height: auto;
+    min-height: 100vh;
   }
 }
 
@@ -422,9 +466,6 @@ button:focus {
     }
     .menu {
       display: block;
-    }
-    .nav {
-      flex-direction: column;
     }
   }
 }
