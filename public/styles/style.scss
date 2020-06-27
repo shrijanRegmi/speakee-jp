@@ -3,7 +3,7 @@ html {
 }
 body {
   overflow-x: hidden;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 button {
@@ -18,11 +18,7 @@ button:focus {
   height: 110vh;
   overflow: hidden;
   margin-bottom: 50px;
-  background: linear-gradient(
-    to bottom,
-    rgb(229, 243, 247),
-    rgb(255, 255, 255)
-  );
+  background: linear-gradient(to bottom, rgb(229, 243, 247), rgb(255, 255, 255));
 }
 
 // Starting of header section
@@ -135,12 +131,12 @@ button:focus {
   }
 
   .contentContainer {
-    margin-bottom: 60%;
+    margin-bottom: 50%;
   }
 
   .content {
     p {
-      width: 60%;
+      width: 80%;
     }
   }
 
@@ -204,6 +200,7 @@ button:focus {
   }
   p {
     font-size: 20px;
+    max-width: 70%;
     font-weight: 500;
   }
 }
@@ -218,7 +215,6 @@ button:focus {
   h1 {
     font-weight: 500;
     font-size: 65px !important;
-    line-height: 90px;
   }
   p {
     margin: 0px;
@@ -275,6 +271,11 @@ button:focus {
   button:nth-child(1) {
     margin-right: 20px;
   }
+
+  .detailContainer {
+    margin: auto;
+    width: 80% !important;
+  }
 }
 // Ending of footer
 
@@ -288,6 +289,9 @@ button:focus {
       font-size: 16px;
     }
     .content {
+      h1{
+        font-size: 32px !important;
+      }
       p {
         width: 100%;
       }
@@ -379,14 +383,43 @@ button:focus {
   }
 }
 
+@media screen and(min-width: 1600px) {
+  #footer {
+    .detailContainer {
+      width: 70% !important;
+    }
+  }
+}
+
+@media screen and(min-width: 1900px) {
+  #landingSection {
+    .contentContainer {
+      margin-bottom: 10%;
+    }
+  }
+}
+
 @media screen and(max-width: 992px) {
-  #header{
+  #header {
     margin-bottom: 20px;
   }
   #landingSection {
     position: relative;
     .mainImg {
       margin-top: 20px;
+    }
+  }
+  #showcaseSection {
+    p {
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and(max-width: 1075px) {
+  #landingSection {
+    h1 {
+      font-size: 50px !important;
     }
   }
 }
@@ -403,15 +436,9 @@ button:focus {
   }
   #footer {
     ul {
-      margin-top: 20px;
-      width: 100%;
+      margin-top: 30px !important;
       li {
-        width: 30%;
-        margin: 10px 0px;
-      }
-      li:nth-child(1) {
-        width: 100%;
-        text-align: center;
+        margin-bottom: 20px;
       }
     }
   }
@@ -466,6 +493,14 @@ button:focus {
     }
     .menu {
       display: block;
+    }
+  }
+}
+
+@media screen and(max-width: 1445px) {
+  #footer {
+    .detailContainer {
+      width: 100% !important;
     }
   }
 }

@@ -4,7 +4,7 @@ html {
 
 body {
   overflow-x: hidden;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 button {
@@ -136,11 +136,11 @@ button:focus {
 }
 
 #landingSection .contentContainer {
-  margin-bottom: 60%;
+  margin-bottom: 50%;
 }
 
 #landingSection .content p {
-  width: 60%;
+  width: 80%;
 }
 
 #landingSection .floatingBtn {
@@ -205,6 +205,7 @@ button:focus {
 
 #showcaseSection p {
   font-size: 20px;
+  max-width: 70%;
   font-weight: 500;
 }
 
@@ -218,7 +219,6 @@ button:focus {
 #largeTextSection h1 {
   font-weight: 500;
   font-size: 65px !important;
-  line-height: 90px;
 }
 
 #largeTextSection p {
@@ -278,12 +278,20 @@ button:focus {
   margin-right: 20px;
 }
 
+#footer .detailContainer {
+  margin: auto;
+  width: 80% !important;
+}
+
 @media screen and (max-width: 540px) {
   #header {
     padding: 20px !important;
   }
   #landingSection .floatingBtn {
     font-size: 16px;
+  }
+  #landingSection .content h1 {
+    font-size: 32px !important;
   }
   #landingSection .content p {
     width: 100%;
@@ -355,6 +363,18 @@ button:focus {
   }
 }
 
+@media screen and (min-width: 1600px) {
+  #footer .detailContainer {
+    width: 70% !important;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  #landingSection .contentContainer {
+    margin-bottom: 10%;
+  }
+}
+
 @media screen and (max-width: 992px) {
   #header {
     margin-bottom: 20px;
@@ -364,6 +384,15 @@ button:focus {
   }
   #landingSection .mainImg {
     margin-top: 20px;
+  }
+  #showcaseSection p {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1075px) {
+  #landingSection h1 {
+    font-size: 50px !important;
   }
 }
 
@@ -378,16 +407,10 @@ button:focus {
     width: 30%;
   }
   #footer ul {
-    margin-top: 20px;
-    width: 100%;
+    margin-top: 30px !important;
   }
   #footer ul li {
-    width: 30%;
-    margin: 10px 0px;
-  }
-  #footer ul li:nth-child(1) {
-    width: 100%;
-    text-align: center;
+    margin-bottom: 20px;
   }
 }
 
@@ -441,6 +464,12 @@ button:focus {
   }
   #header .menu {
     display: block;
+  }
+}
+
+@media screen and (max-width: 1445px) {
+  #footer .detailContainer {
+    width: 100% !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
