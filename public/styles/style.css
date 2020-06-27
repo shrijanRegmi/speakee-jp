@@ -16,7 +16,8 @@ button:focus {
 }
 
 .blueBg {
-  min-height: 100vh;
+  height: 110vh;
+  overflow: hidden;
   margin-bottom: 50px;
   background: -webkit-gradient(linear, left top, left bottom, from(#e5f3f7), to(white));
   background: linear-gradient(to bottom, #e5f3f7, white);
@@ -107,6 +108,7 @@ button:focus {
 
 #landingSection .row {
   height: 100%;
+  padding: 0px 50px;
 }
 
 #landingSection .row .col-md-6:nth-child(1) {
@@ -133,6 +135,10 @@ button:focus {
   height: auto;
 }
 
+#landingSection .contentContainer {
+  margin-bottom: 60%;
+}
+
 #landingSection .content p {
   width: 60%;
 }
@@ -152,11 +158,6 @@ button:focus {
   z-index: 4;
 }
 
-#landingSection .mainImg {
-  height: auto;
-  width: 90%;
-}
-
 #fiveColSection {
   margin-bottom: 100px;
 }
@@ -172,7 +173,7 @@ button:focus {
 }
 
 #sliderSection ol {
-  top: 380px;
+  top: 420px;
 }
 
 #sliderSection ol li {
@@ -194,6 +195,7 @@ button:focus {
 
 #showcaseSection {
   min-height: 100vh;
+  margin-top: 100px;
 }
 
 #showcaseSection .row {
@@ -210,6 +212,7 @@ button:focus {
   background: linear-gradient(342.8deg, #ff7676 0%, #f54ea2 100%);
   margin-top: 100px;
   padding: 40px 20px;
+  padding-top: 70px;
 }
 
 #largeTextSection h1 {
@@ -248,8 +251,12 @@ button:focus {
   width: 45px;
 }
 
+#footer .brands img:nth-child(5) {
+  width: 30px;
+}
+
 #footer .sizedBox {
-  width: 20px;
+  width: 30px;
 }
 
 #footer button {
@@ -274,7 +281,6 @@ button:focus {
 @media screen and (max-width: 540px) {
   #header {
     padding: 20px !important;
-    margin-bottom: 20px;
   }
   #landingSection .floatingBtn {
     font-size: 16px;
@@ -349,6 +355,18 @@ button:focus {
   }
 }
 
+@media screen and (max-width: 992px) {
+  #header {
+    margin-bottom: 20px;
+  }
+  #landingSection {
+    position: relative;
+  }
+  #landingSection .mainImg {
+    margin-top: 20px;
+  }
+}
+
 @media screen and (max-width: 1100px) {
   #sliderSection {
     display: block;
@@ -370,6 +388,23 @@ button:focus {
   #footer ul li:nth-child(1) {
     width: 100%;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #landingSection .row {
+    padding: 0px;
+  }
+  #landingSection .contentContainer {
+    margin-bottom: 0px;
+  }
+  #landingSection .mainImg {
+    width: 100%;
+    height: auto;
+  }
+  .blueBg {
+    height: auto;
+    min-height: 100vh;
   }
 }
 
@@ -406,12 +441,6 @@ button:focus {
   }
   #header .menu {
     display: block;
-  }
-  #header .nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 }
 /*# sourceMappingURL=style.css.map */
