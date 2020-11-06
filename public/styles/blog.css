@@ -1,0 +1,179 @@
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.url {
+  color: #fc6885;
+  margin-left: 30px;
+}
+
+h1,
+h2,
+h3,
+a {
+  color: #fc6885;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #fc6885;
+}
+
+section {
+  margin: 50px 0px;
+}
+
+.container {
+  max-width: 750px;
+  margin-bottom: 150px;
+  margin-top: 80px;
+}
+
+.container-1400 {
+  max-width: 1400px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+hr {
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.mainTitle {
+  font-size: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 26px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .url {
+    margin-left: 20px;
+  }
+  .mainTitle {
+    font-size: 45px;
+  }
+  section {
+    margin: 20px 0px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  .mainTitle {
+    font-size: 30px;
+  }
+}
+
+.toc .tocHeader {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.toc .tocHeader :last-child {
+  color: #fc6885;
+}
+
+.toc .tocItem {
+  margin-bottom: 40px;
+}
+
+.toc .tocItem p {
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 500px) {
+  .toc .tocHeader {
+    font-size: 14px;
+  }
+  .toc .tocItem {
+    margin-bottom: 20px;
+  }
+}
+
+.subContent h2 {
+  font-weight: normal;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .subContent h2 {
+    margin-top: 12px;
+  }
+}
+
+.blogs .container {
+  margin-bottom: 30px;
+}
+
+.blogs .container-1400 {
+  margin-bottom: 150px;
+}
+
+.blogs h3 {
+  color: #000;
+}
+
+.blogs img {
+  height: 200px;
+  width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  .blogs img {
+    height: 200px;
+    width: auto;
+  }
+}
+
+.blogs .blogItem {
+  cursor: pointer;
+  margin-bottom: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .blogs .blogItem {
+    margin-bottom: 20px;
+  }
+}
+
+.blogs .blogItem:hover h3 {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=blog.css.map */

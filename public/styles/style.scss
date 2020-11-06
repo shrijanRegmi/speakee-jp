@@ -4,7 +4,7 @@ html {
 }
 body {
   overflow-x: hidden;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 button {
@@ -19,7 +19,11 @@ button:focus {
   height: 110vh;
   overflow: hidden;
   margin-bottom: 50px;
-  background: linear-gradient(to bottom, rgb(229, 243, 247), rgb(255, 255, 255));
+  background: linear-gradient(
+    to bottom,
+    rgb(229, 243, 247),
+    rgb(255, 255, 255)
+  );
 }
 
 // Starting of header section
@@ -164,6 +168,11 @@ button:focus {
     width: 18%;
     margin: 0px 10px;
   }
+
+  .mainImg {
+    height: 200px;
+    width: 90%;
+  }
 }
 // Ending of 5 col section
 
@@ -187,6 +196,11 @@ button:focus {
   .content {
     height: 500px;
     padding: 20px;
+  }
+
+  .mainImg {
+    height: 150px;
+    width: auto;
   }
 }
 // Ending of slider section
@@ -290,7 +304,7 @@ button:focus {
       font-size: 16px;
     }
     .content {
-      h1{
+      h1 {
         font-size: 32px !important;
       }
       p {
