@@ -29,7 +29,12 @@ button:focus {
 // Starting of header section
 #header {
   padding: 20px 40px;
-  padding-bottom: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  transition: transform 500ms;
 
   h5 {
     margin: 0px;
@@ -96,11 +101,25 @@ button:focus {
     }
   }
 }
+
+.header-slide-up {
+  transform: translateY(-80px);
+}
+
+.header-slide-down {
+  transform: translateY(0px);
+}
+
+.header-shadow {
+  background-color: white;
+  box-shadow: 0 1px 15px #e4ebf1;
+}
 // Ending of header section
 
 // Starting of landing section
 #landingSection {
   min-height: 80vh;
+  margin-top: 80px;
   .container {
     max-width: 1400px !important;
     height: 100%;
@@ -156,7 +175,7 @@ button:focus {
     border: none;
     background: linear-gradient(342.8deg, #ff7676 0%, #f54ea2 100%);
     color: #fff;
-    z-index: 4;
+    z-index: 1;
   }
 }
 // Ending of landing section
