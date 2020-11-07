@@ -182,15 +182,21 @@ button:focus {
 
 // Starting of 5 col section
 #fiveColSection {
+  max-width: 1800px;
+  margin: 0px auto;
   margin-bottom: 100px;
   .mCol {
     width: 20%;
     margin: 0px 10px;
   }
 
-  .mainImg {
-    height: 200px;
-    width: 90%;
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  a:hover h5 {
+    text-decoration: underline;
   }
 }
 // Ending of 5 col section
@@ -198,7 +204,7 @@ button:focus {
 // Starting of slider section
 #sliderSection2 {
   ol {
-    top: 480px;
+    top: 530px;
     li {
       background-color: rgb(223, 222, 222);
       height: 20px;
@@ -241,6 +247,15 @@ button:focus {
   .carousel-indicators {
     margin-left: 5%;
     margin-right: 5%;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  a:hover h5 {
+    text-decoration: underline;
   }
 }
 // Ending of slider section

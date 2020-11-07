@@ -185,6 +185,8 @@ button:focus {
 }
 
 #fiveColSection {
+  max-width: 1800px;
+  margin: 0px auto;
   margin-bottom: 100px;
 }
 
@@ -193,13 +195,17 @@ button:focus {
   margin: 0px 10px;
 }
 
-#fiveColSection .mainImg {
-  height: 200px;
-  width: 90%;
+#fiveColSection a {
+  color: #000;
+  text-decoration: none;
+}
+
+#fiveColSection a:hover h5 {
+  text-decoration: underline;
 }
 
 #sliderSection2 ol {
-  top: 480px;
+  top: 530px;
 }
 
 #sliderSection2 ol li {
@@ -248,6 +254,15 @@ button:focus {
 #sliderSection .carousel-indicators {
   margin-left: 5%;
   margin-right: 5%;
+}
+
+#sliderSection a {
+  color: #000;
+  text-decoration: none;
+}
+
+#sliderSection a:hover h5 {
+  text-decoration: underline;
 }
 
 #showcaseSection {
