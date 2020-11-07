@@ -7,7 +7,7 @@ window.onscroll = function () {
   if (scrollPos > initPos) {
     header.classList.add('header-slide-up');
     header.classList.remove('header-slide-down');
-    header.classList.remove('header-shadow');
+    // header.classList.remove('header-shadow');
     console.log('Down');
   } else {
     header.classList.add('header-shadow');

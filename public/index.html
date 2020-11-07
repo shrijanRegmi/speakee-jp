@@ -13,6 +13,9 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&display=swap"
       rel="stylesheet"
     />
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./styles/css/bootstrap.min.css" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
@@ -35,12 +38,17 @@
               <img src="images/🇯🇵.svg" alt="" /> -->
                   <div class="tabContainer mt-2">
                     <h5><a href="#">アプリについて</a></h5>
-                    <h5><a href="/public/eiken.html">ブログ</a></h5>
+                    <h5><a href="/eiken.html">ブログ</a></h5>
                   </div>
                 </li>
                 <li class="menu">
-                <img src="images/bars.svg" class="img-fluid" alt="" srcset="">
-              </li>
+                  <img
+                    src="images/bars.svg"
+                    class="img-fluid"
+                    alt=""
+                    srcset=""
+                  />
+                </li>
               </ul>
             </li>
             <!-- <li>
@@ -151,91 +159,218 @@
     </div>
 
     <!-- Starting of 5 column section -->
-    <section id="fiveColSection">
+    <section
+      id="sliderSection2"
+      class="carousel slide vw-100"
+      data-ride="carousel"
+    >
       <h2 class="font-weight-bold text-center">ブログ</h2>
-      <div class="contentContainer mx-auto p-5">
-        <div
-          class="mRow d-flex justify-lg-content-between justify-content-center flex-wrap"
-        >
-          <div class="mCol d-flex align-items-center flex-column text-center">
-            <img
-              src="images/blogs/blog01_top.png"
-              class="img-fluid mainImg"
-              alt=""
-            />
-            <img src="images/Oval (1).svg" class="img-fluid mt-3" alt="" />
-            <p class="text-secondary">13 時間前</p>
-            <h5 class="font-weight-bolder">
-              言語を学習しながら楽しむための9つのヒント
-            </h5>
-            <p class="text-secondary">
-              多くの人は、言語を学ぶ最良の方法は、その言語が話されている国に旅行することだと主張するでしょう。
-            </p>
-          </div>
 
-          <div class="mCol d-flex align-items-center flex-column text-center">
-            <img
-              src="images/blogs/blog02_top.png"
-              class="img-fluid mainImg"
-              alt=""
-            />
-            <img src="images/Oval (2).svg" class="img-fluid mt-3" alt="" />
-            <p class="text-secondary">1 日前</p>
-            <h5 class="font-weight-bolder">
-              アイヌ語—日本固有の歴史と文化の物語
-            </h5>
-            <p class="text-secondary">
-              私たちは、先を見越し、絶滅の危機にある先住民の言語を保存する必要がありま…
-            </p>
-          </div>
+      <ol class="carousel-indicators mt-5">
+        <li data-target="#sliderSection2" data-slide-to="0" class="active"></li>
+        <li data-target="#sliderSection2" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner text-center" role="listbox">
+        <!-- Carousel 1 -->
+        <div class="carousel-item active">
+          <section id="fiveColSection">
+            <div class="contentContainer mx-auto p-5">
+              <div
+                class="mRow d-flex justify-lg-content-between justify-content-center flex-wrap"
+              >
+                <div
+                  class="mCol d-flex align-items-center flex-column text-center"
+                >
+                  <img
+                    src="images/blogs/blog01_top.png"
+                    class="img-fluid mainImg"
+                    alt=""
+                  />
+                  <img
+                    src="images/Oval (1).svg"
+                    class="img-fluid mt-3"
+                    alt=""
+                  />
+                  <p class="text-secondary">13 時間前</p>
+                  <h5 class="font-weight-bolder">
+                    言語を学習しながら楽しむための9つのヒント
+                  </h5>
+                  <p class="text-secondary">
+                    多くの人は、言語を学ぶ最良の方法は、その言語が話されている国に旅行することだと主張するでしょう。
+                  </p>
+                </div>
 
-          <div class="mCol d-flex align-items-center flex-column text-center">
-            <img
-              src="images/blogs/blog03_top.png"
-              class="img-fluid mainImg"
-              alt=""
-            />
-            <img src="images/Oval (3).svg" class="img-fluid mt-3" alt="" />
-            <p class="text-secondary">5 日前</p>
-            <h5 class="font-weight-bolder">
-              英検5年生英語レベル 言葉と言葉のテスト
-            </h5>
-            <p class="text-secondary">
-              実用英語技能検定試験
-              （英検®）は合否判断や将来のキャリアの為の英語をマスタ…
-            </p>
-          </div>
+                <div
+                  class="mCol d-flex align-items-center flex-column text-center"
+                >
+                  <img
+                    src="images/blogs/blog02_top.png"
+                    class="img-fluid mainImg"
+                    alt=""
+                  />
+                  <img
+                    src="images/Oval (2).svg"
+                    class="img-fluid mt-3"
+                    alt=""
+                  />
+                  <p class="text-secondary">1 日前</p>
+                  <h5 class="font-weight-bolder">
+                    アイヌ語—日本固有の歴史と文化の物語
+                  </h5>
+                  <p class="text-secondary">
+                    私たちは、先を見越し、絶滅の危機にある先住民の言語を保存する必要がありま…
+                  </p>
+                </div>
 
-          <div class="mCol d-flex align-items-center flex-column text-center">
-            <img
-              src="images/blogs/blog04_top.png"
-              class="img-fluid mainImg"
-              alt=""
-            />
-            <img src="images/Oval (4).svg" class="img-fluid mt-3" alt="" />
-            <p class="text-secondary">1 一週間前</p>
-            <h5 class="font-weight-bolder">
-              あなたが何度も何度も使用するトップ英語フレーズ
-            </h5>
-            <p class="text-secondary">
-              あなたは英語を勉強していますか？
-              もしそうなら、会話に自信をつけるのに役立つフレ…
-            </p>
-          </div>
+                <div
+                  class="mCol d-flex align-items-center flex-column text-center"
+                >
+                  <img
+                    src="images/blogs/blog03_top.png"
+                    class="img-fluid mainImg"
+                    alt=""
+                  />
+                  <img
+                    src="images/Oval (3).svg"
+                    class="img-fluid mt-3"
+                    alt=""
+                  />
+                  <p class="text-secondary">5 日前</p>
+                  <h5 class="font-weight-bolder">
+                    英検5年生英語レベル 言葉と言葉のテスト
+                  </h5>
+                  <p class="text-secondary">
+                    実用英語技能検定試験
+                    （英検®）は合否判断や将来のキャリアの為の英語をマスタ…
+                  </p>
+                </div>
 
-          <div class="mCol d-flex align-items-center flex-column text-center">
-            <img
-              src="images/blogs/blog05_top.png"
-              class="img-fluid mainImg"
-              alt=""
-            />
-            <img src="images/Oval (5).svg" class="img-fluid mt-3" alt="" />
-            <p class="text-secondary">2 何週間前</p>
-            <h5 class="font-weight-bolder">136異なる言語での愛称</h5>
-            <p class="text-secondary">
-              私たちの生活に特別な誰かがいるとき、私たちはしばしば彼らをペットの名前、愛称、または他の愛称で呼
-            </p>
-          </div>
+                <div
+                  class="mCol d-flex align-items-center flex-column text-center"
+                >
+                  <img
+                    src="images/blogs/blog04_top.png"
+                    class="img-fluid mainImg"
+                    alt=""
+                  />
+                  <img
+                    src="images/Oval (4).svg"
+                    class="img-fluid mt-3"
+                    alt=""
+                  />
+                  <p class="text-secondary">1 一週間前</p>
+                  <h5 class="font-weight-bolder">
+                    あなたが何度も何度も使用するトップ英語フレーズ
+                  </h5>
+                  <p class="text-secondary">
+                    あなたは英語を勉強していますか？
+                    もしそうなら、会話に自信をつけるのに役立つフレ…
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Carousel 2 -->
+        <div class="carousel-item">
+          <section id="fiveColSection">
+            <div class="contentContainer mx-auto p-5">
+              <div
+                class="mRow d-flex justify-lg-content-between justify-content-center flex-wrap"
+              >
+                <div
+                  class="mCol d-flex align-items-center flex-column text-center"
+                >
+                  <img
+                    src="images/blogs/blog05_top.png"
+                    class="img-fluid mainImg"
+                    alt=""
+                  />
+                  <img
+                    src="images/Oval (1).svg"
+                    class="img-fluid mt-3"
+                    alt=""
+                  />
+                  <p class="text-secondary">13 時間前</p>
+                  <h5 class="font-weight-bolder">
+                    言語を学習しながら楽しむための9つのヒント
+                  </h5>
+                  <p class="text-secondary">
+                    多くの人は、言語を学ぶ最良の方法は、その言語が話されている国に旅行することだと主張するでしょう。
+                  </p>
+                </div>
+
+                <div
+                  class="mCol d-flex align-items-center flex-column text-center"
+                >
+                  <img
+                    src="images/blogs/blog06_top.png"
+                    class="img-fluid mainImg"
+                    alt=""
+                  />
+                  <img
+                    src="images/Oval (2).svg"
+                    class="img-fluid mt-3"
+                    alt=""
+                  />
+                  <p class="text-secondary">1 日前</p>
+                  <h5 class="font-weight-bolder">
+                    アイヌ語—日本固有の歴史と文化の物語
+                  </h5>
+                  <p class="text-secondary">
+                    私たちは、先を見越し、絶滅の危機にある先住民の言語を保存する必要がありま…
+                  </p>
+                </div>
+
+                <div
+                  class="mCol d-flex align-items-center flex-column text-center"
+                >
+                  <img
+                    src="images/blogs/blog07_top.png"
+                    class="img-fluid mainImg"
+                    alt=""
+                  />
+                  <img
+                    src="images/Oval (3).svg"
+                    class="img-fluid mt-3"
+                    alt=""
+                  />
+                  <p class="text-secondary">5 日前</p>
+                  <h5 class="font-weight-bolder">
+                    英検5年生英語レベル 言葉と言葉のテスト
+                  </h5>
+                  <p class="text-secondary">
+                    実用英語技能検定試験
+                    （英検®）は合否判断や将来のキャリアの為の英語をマスタ…
+                  </p>
+                </div>
+
+                <div
+                  class="mCol d-flex align-items-center flex-column text-center"
+                >
+                  <img
+                    src="images/blogs/blog08_top.png"
+                    class="img-fluid mainImg"
+                    alt=""
+                  />
+                  <img
+                    src="images/Oval (4).svg"
+                    class="img-fluid mt-3"
+                    alt=""
+                  />
+                  <p class="text-secondary">1 一週間前</p>
+                  <h5 class="font-weight-bolder">
+                    あなたが何度も何度も使用するトップ英語フレーズ
+                  </h5>
+                  <p class="text-secondary">
+                    あなたは英語を勉強していますか？
+                    もしそうなら、会話に自信をつけるのに役立つフレ…
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </section>
