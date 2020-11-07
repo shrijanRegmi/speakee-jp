@@ -245,6 +245,11 @@ button:focus {
   width: auto;
 }
 
+#sliderSection .carousel-indicators {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 #showcaseSection {
   min-height: 100vh;
   margin-top: 100px;
