@@ -24,13 +24,108 @@ button:focus {
   background: linear-gradient(to bottom, #e5f3f7, white);
 }
 
+.menu {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 5;
+}
+
+.menu .bar1,
+.menu .bar2,
+.menu .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #f54ea2;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(139, 139, 139, 0.452);
+  z-index: 16;
+}
+
+.mobile-nav .content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 250px;
+  background-color: #da3d8b;
+  background-color: #fff;
+}
+
+.mobile-nav .links {
+  margin-top: 140px;
+}
+
+.mobile-nav a {
+  color: #000;
+}
+
+.mobile-nav button {
+  margin-left: 20px;
+  padding: 10px 25px;
+  width: 150px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.mobile-nav button img {
+  width: 23px;
+  height: auto;
+}
+
+.mobile-nav .btns {
+  position: absolute;
+  bottom: 20px;
+}
+
+.change {
+  right: 20px;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -7px);
+  transform: rotate(45deg) translate(-8px, -7px);
+}
+
+.show-mob-nav {
+  display: block;
+}
+
+.show-mob-nav {
+  overflow: hidden;
+}
+
 #header {
   padding: 20px 40px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 17;
   -webkit-transition: -webkit-transform 500ms;
   transition: -webkit-transform 500ms;
   transition: transform 500ms;

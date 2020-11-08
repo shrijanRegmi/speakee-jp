@@ -7,7 +7,6 @@ window.onscroll = function () {
   if (scrollPos > initPos) {
     header.classList.add('header-slide-up');
     header.classList.remove('header-slide-down');
-    // header.classList.remove('header-shadow');
     console.log('Down');
   } else {
     header.classList.add('header-shadow');
@@ -21,5 +20,25 @@ window.onscroll = function () {
   }
 
   initPos = scrollPos;
-  // console.log(document.documentElement.scrollTop, document.documentElement.);
 }
+
+const menu = document.querySelector('.menu');
+const mobNav = document.querySelector('.mobile-nav');
+const header = document.querySelector('#header');
+
+
+menu.addEventListener('click', function () {
+  console.log('pressesd');
+  menu.classList.toggle('change');
+  let val = mobNav.classList.toggle('show-mob-nav');
+
+  if (val) {
+    document.body.style.overflowY = 'hidden';
+    header.classList.add('header-shadow');
+  } else {
+    document.body.style.overflowY = 'scroll';
+    if (initPos == 0) {
+      header.classList.remove('header-shadow');
+    }
+  }
+});
